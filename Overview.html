@@ -4,8 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Exploring the Heian Period</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap" rel="stylesheet">
 <style>
-    /* CSS styles */
+    
     body {
         font-family: Arial, sans-serif;
         margin: 0;
@@ -25,15 +28,19 @@
         align-items: center;
     }
     .logo img {
-        max-width: 100px; /* Adjust the size as needed */
-        height: auto; /* Maintain aspect ratio */
+        max-width: 100px; 
+        height: auto; 
     }
     .title {
-        font-size: 24px;
+        font-size: 54px;
+        font-family: 'Jersey 10 Charted'
     }
     .navigation {
         display: flex;
     }
+    .navigation a {
+    text-decoration: none; 
+}
     .navigation-box {
         background-color: #555;
         color: #fff;
@@ -75,19 +82,18 @@
         font-weight: bold;
         margin-bottom: 10px;
     }
-    .section-image {
-        max-width: 100%;
-        text-align: center; 
-        margin-bottom: 70px;
-        margin-top: 20px;
-    }
+    .section-image img {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
     
-
     .section-content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center; /* Center align text */
+        text-align: center; 
     }
     .bold-header {
         font-weight: bold;
@@ -100,8 +106,40 @@
     }
 
     .long-content {
-        height: 1000px; /* Adjust height as needed */
+        height: 1000px; 
     }
+
+
+
+    .image-gallery{
+
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .image-gallery img {
+        max-width: 1200px;
+        height: 150px;
+        object-fit: cover;
+        object-position: bottom;
+        padding: 7px;
+        border-radius: 10px;
+        
+        
+    }
+
+    .image-gallery img:hover {
+cursor: pointer;
+background-color:black;
+transition: 0.5s;
+    }
+
+
+
+
 
 </style>
 </head>
@@ -120,7 +158,7 @@
                 <a href="Overview.html" class="navigation-box">Overview</a>
                 <a href="Culture.html" class="navigation-box">Culture</a>
                 <a href="History.html" class="navigation-box">History</a>
-                <a href="Interactive.html" class="navigation-box">Fun Game</a>
+                <a href="https://www.youtube.com/watch?v=ZnZEoOJ-cxE" class="navigation-box">Vidoes</a>
             </div>
         </div>
     </header>
@@ -130,26 +168,40 @@
             <h2>Overview</h2>
             <div class="bold-header">Welcome to the Overview!</div>
             <div class="section-content">
-                <div>This is the overview of our website.
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. 
+                <div>This is the overview of the website.
+                    A good way to understand and visualize what the Hien period was about.
+                    Through a series of images that depciate its aesthtic.
                 </div>
                 <div class="section-image">
-                    <img src="" alt="Overview image">
+                    <img src="https://japanpowered.com/media/images/toyokuni-tale-of-genji-800x564.jpg" alt="Overview image">
                 </div>
             </div>
         </div>
         
         <div class="section long-content">
             <h2>Why</h2>
-            <div>The overview of this period is japan can be descirbed as
-                Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
+            <div>The overview of this period is japan can be descirbed as a time of refined elegance.
+                In Kyoto-the new capital, people enjoyed beautiful gardens and art while following strict rules of behavior.
+                This era shaped Japan's identity through its focus on beauty and grace.
             </div>
         
-            <div>And I want to include a wall of images that overview this era</div>
+            <div class="image-gallery" >
+                <img src="https://100poets.files.wordpress.com/2023/03/the_tales_of_ise_ise_monogatari_cbl_j_1050.2_ff.11b-12a.jpg?w=1024" alt="Overview image">
+                <img src="https://omotenashi-guide.com/wp-content/uploads/2018/06/b58dc1fc9953c9ea5f27bf3aedd2bcd4.jpg" alt="Overview image">
+                <img src="https://www.roningallery.com/Inventory_Images/JPR3-25930_Main-1.jpg" alt="Overview image">
+                <img src="https://images.saymedia-content.com/.image/t_share/MjAyMzEzNjI4NjM0ODUwMzcy/women-in-the-heian-court.png" alt="Overview image">
+                <img src="https://factsanddetails.com/archives/005/201611/5820c180ded9e.jpg" alt="Overview image">
+                <img src="https://digital.library.upenn.edu/women/omori/court/front-page.gif" alt="Overview image">
+                <img src="https://humanprogress.org/wp-content/uploads/2022/04/murasaki.jpg" alt="Overview image">
+                <img src="https://japanpowered.com/media/images/toyokuni-tale-of-genji-800x564.jpg" alt="Overview image">
+                <img src="https://assets.sutori.com/user-uploads/image/6012ebf4-1863-4ef6-ad28-bc0b9a44f5a6/ba1091d9bec6caa85ab2fe2fc1fb418f.jpeg" alt="Overview image">
+                <img src="https://factsanddetails.com/archives/005/201611/58202786b7cba.jpg" alt="Overview image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpvIrfnadCZd6bykTeS52QfF8CcGL2yB2__SRxi5_J7Zt-AYDAuDWwzWjfTsYOYyDlFnM&usqp=CAU" alt="Overview image">
+                <img src="https://i0.wp.com/lilyabsinthe.com/wp-content/uploads/2016/05/e96c1cfa5aa8d822f3bf6065c841652f.jpg?resize=336%2C500&ssl=1" alt="Overview image">
+                <img src="https://www.japan-experience.com/sites/default/files/styles/scale_crop_380x278/public/legacy/japan_experience/1522996406993.jpg?h=da7bd927&itok=01DCRR6r" alt="Overview image">
+                <img src="https://l450v.alamy.com/450v/2b01nt7/japan-murasaki-shikibu-c-973-10141025-at-ishiyama-temple-drawing-by-kyosen-kawasaki-2-june-1877-15-september-1942-early-20th-century-murasaki-shikibu-english-lady-murasaki-was-a-japanese-novelist-poet-and-lady-in-waiting-at-the-imperial-court-during-the-heian-period-she-is-best-known-as-the-author-of-the-tale-of-genji-written-in-japanese-between-about-1000-and-1012-murasaki-shikibu-is-a-nickname-her-real-name-is-unknown-but-she-may-have-been-fujiwara-takako-who-was-mentioned-in-a-1007-court-diary-as-an-imperial-lady-in-waiting-2b01nt7.jpg" alt="Overview image">
+                <img src="https://nosonotakako.weebly.com/uploads/2/6/8/6/26868814/2784806_orig.jpg" alt="Overview image">
+            </div>
             
         </div>
         

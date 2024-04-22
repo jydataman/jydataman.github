@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Exploring the Heian Period</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap" rel="stylesheet">
 <style>
 body {
         font-family: Arial, sans-serif;
@@ -24,15 +27,19 @@ body {
         align-items: center;
     }
     .logo img {
-        max-width: 100px; /* Adjust the size as needed */
-        height: auto; /* Maintain aspect ratio */
+        max-width: 100px;
+        height: auto;
     }
     .title {
-        font-size: 24px;
+        font-size: 54px;
+        font-family: 'Jersey 10 Charted'
     }
     .navigation {
         display: flex;
     }
+    .navigation a {
+    text-decoration: none; 
+}
     .navigation-box {
         background-color: #555;
         color: #fff;
@@ -76,18 +83,26 @@ body {
         margin-bottom: 10px;
     }
     .section-image {
-        max-width: 100%;
+         max-width: 100%;
         text-align: center; 
         margin-bottom: 70px;
-        margin-top: 20px;
+        margin-top: 20px; 
     }
-    
+
+    .section-image img {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 
     .section-content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center; /* Center align text */
+        text-align: center; 
+
+
     }
     .bold-header {
         font-weight: bold;
@@ -100,8 +115,22 @@ body {
     }
 
     .long-content {
-        height: 1000px; 
+        
+        height: 600px; 
+        
     }
+    .sl-carousel-item img {
+        width: 100%; /* Set the width of the images to 100% of their container */
+        height: auto; /* Automatically adjust the height to maintain aspect ratio */
+        border-radius: 8px; /* Add rounded corners to the images */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    }
+
+
+
+    </style>
+
+
 </style>
 </head>
 <body>
@@ -119,7 +148,7 @@ body {
                 <a href="Overview.html" class="navigation-box">Overview</a>
                 <a href="Culture.html" class="navigation-box">Culture</a>
                 <a href="History.html" class="navigation-box">History</a>
-                <a href="Interactive.html" class="navigation-box">Fun Game</a>
+                <a href="https://www.youtube.com/watch?v=ZnZEoOJ-cxE" class="navigation-box">Vidoes</a>
             </div>
         </div>
     </header>
@@ -127,25 +156,63 @@ body {
     <div class="container">
         <div class="section">
             <h2>Culture</h2>
-            <div class="bold-header">The arts and culture of this era flourished</div>
+            <div class="bold-header">The Arts and Culture of this era flourished</div>
             <div class="section-content">
                 <div>This is the culture page of our website!
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. 
+                    I want this section of the page to demonstrate 
+                    masterpieces like "The Tale of Genji" and vibrant paintings,
+                    and discover the distinctive roles of men and women in this elegant society. 
                 </div>
                 <div class="section-image">
-                    <img src="" alt="Culture Image">
+                    <img src="https://cupblog.org/wp-content/uploads/2019/08/Heian-court-excerpts.jpg" alt="Culture Image">
                 </div>
             </div>
         </div>
         
         <div class="section long-content">
             <h2>Why</h2>
-            <div>This is about the culture and arts of this period.
+            
+                <p>This is about the culture and arts of this period.</p>
                 
-                I want to create featured peices of artwork, books, and figures as a list going downwards
-            </div>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/themes/light.css">
+                <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.0/cdn/shoelace-autoloader.js"></script>
+
+                <sl-carousel navigation="" mouse-dragging="" loop="" role="region" aria-label="Carousel">
+
+                    <sl-carousel-item aria-label="Slide 1" role="group" aria-hidden="false">
+                        <img src="https://www.metmuseum.org/-/media/images/exhibitions/2019/tale-of-genji/taleofgenji_detailpage_desktop_3360x1720_082818.jpg?sc_lang=en&w=1440&hash=874AC9061B7463D1D33C63044C0867E2" alt="Slide 1">
+                        
+                    </sl-carousel-item>
+
+                    <sl-carousel-item aria-label="Slide 2" role="group" aria-hidden="true">
+                        <img src="https://m.media-amazon.com/images/I/81vf06pGEAL._AC_UF1000,1000_QL80_DpWeblab_.jpg" alt="Slide 2">
+                        
+                    </sl-carousel-item>
+
+                    <sl-carousel-item aria-label="Slide 3" role="group" aria-hidden="true">
+                        <img src="https://japanupmagazine.com/wp-content/uploads/2022/08/178Tsunyaoshi_400x600.jpg" alt="Slide 3">
+                        
+                    </sl-carousel-item>
+
+                    <sl-carousel-item aria-label="Slide 3" role="group" aria-hidden="true">
+                        <img src="https://ozuwashi.com/cdn/shop/products/1365006100_21_600x.jpg?v=1668834436" alt="Slide 4">
+                        
+                    </sl-carousel-item>
+
+                    <sl-carousel-item aria-label="Slide 3" role="group" aria-hidden="true">
+                        <img src="https://japaneselandscape.wordpress.com/wp-content/uploads/2009/12/shigisanengiemaki1-1_masseschasinggranary.jpg?w=300&h=191" alt="Slide 5">
+                        
+                    </sl-carousel-item>
+
+                </sl-carousel>
+
+                <ul>
+                    <li>Slide 1: "The Tale of Genji"</li>
+                    <li>Slide 2: "The Pillow Book"</li>
+                    <li>Slide 3:  Cultural Patronage: Influence of noble families like the Fujiwara clan in supporting artists, writers, and performers.</li>
+                    <li>Slide 4: Distinct Gender Roles: Men's involvement in government affairs, military training, and cultural pursuits; women's roles in household management, education, and courtly rituals.</li>
+                    <li>Slide 5:  Heian-period Paintings: Scenes from nature, court life, and Buddhist themes</li>
+                </ul>
             
         </div>
         

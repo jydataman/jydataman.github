@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Exploring the Heian Period</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap" rel="stylesheet">
 <style>
 body {
         font-family: Arial, sans-serif;
@@ -24,15 +27,19 @@ body {
         align-items: center;
     }
     .logo img {
-        max-width: 100px; /* Adjust the size as needed */
-        height: auto; /* Maintain aspect ratio */
+        max-width: 100px; 
+        height: auto; 
     }
     .title {
-        font-size: 24px;
+        font-size: 54px;
+        font-family: 'Jersey 10 Charted'
     }
     .navigation {
         display: flex;
     }
+    .navigation a {
+    text-decoration: none; 
+}
     .navigation-box {
         background-color: #555;
         color: #fff;
@@ -81,13 +88,19 @@ body {
         margin-bottom: 70px;
         margin-top: 20px;
     }
-    
+
+    .section-image img {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 
     .section-content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center; /* Center align text */
+        text-align: center;
     }
     .bold-header {
         font-weight: bold;
@@ -100,8 +113,115 @@ body {
     }
 
     .long-content {
-        height: 1000px; 
+        height: 1650px; 
     }
+
+    
+
+    .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 100px auto;
+        }
+
+        .container1 {
+
+            padding: 10px 50px;
+            position: relative;
+            width: 50%;
+    
+
+        }
+
+        .text-box {
+
+            padding:20px 30px;
+            background: white;
+            position: relative;
+            border-radius: 6px;
+            font-size: 15px;
+            right: 40px;
+        }
+
+        .left-container {
+
+            left: 0;
+
+        }
+
+        .right-container {
+
+            left: 50%;
+        }
+
+        .container img {
+            position: absolute;
+            width: 140px;
+            /* border-radius: 50%; */
+            right: -230px;
+            top: 32px;
+            z-index: 10;
+
+        }
+
+        .right-container img {
+            left: -250px;
+
+        }
+
+        .timeline::after{
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 100%;
+            background: #fff;
+            top: 0;
+            left: 50%;
+            margin-left: -3px;
+            z-index: -1;
+
+        }
+
+        .text-box h2 {
+            font-family: 600;
+
+        }
+
+        .text-box small {
+            display: inline-block;
+            margin-bottom: 15px;
+
+        }
+
+        .left-container-arrow {
+            height: 0;
+            width: 0;
+            position: absolute;
+            top: 28px;
+            z-index: 1;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 15px solid lightcoral;
+            right: -15px;
+
+
+
+        }
+
+        .right-container-arrow {
+
+            height: 0;
+            width: 0;
+            position: absolute;
+            top: 28px;
+            z-index: 1;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-right: 15px solid lightcoral;
+            left: -15px;
+
+        }
+
 </style>
 </head>
 <body>
@@ -119,35 +239,104 @@ body {
                 <a href="Overview.html" class="navigation-box">Overview</a>
                 <a href="Culture.html" class="navigation-box">Culture</a>
                 <a href="History.html" class="navigation-box">History</a>
-                <a href="Interactive.html" class="navigation-box">Fun Game</a>
+                <a href="https://www.youtube.com/watch?v=ZnZEoOJ-cxE" class="navigation-box">Vidoes</a>
             </div>
         </div>
     </header>
 
     <div class="container">
         <div class="section">
-            <h2>Culture</h2>
+            <h2>History</h2>
             <div class="bold-header">The History of this Era</div>
             <div class="section-content">
                 <div>This is the History page of our website!
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. 
-                </div>
-                <div class="section-image">
-                    <img src="" alt="History Image">
+                    This period is very elegant and culture rich. But it
+                    is also very important in terms of history dates. For Example, 
+                    the capital moved to Kyoto.
                 </div>
             </div>
         </div>
         
         <div class="section long-content">
+
             <h2>Why</h2>
-            <div>This is about the history of this period.
+            <p>During the Heian Period, the imperial court in Kyoto became the center of political power and cultural innovation. The courtiers, led by the Fujiwara clan, enjoyed great influence and wealth, shaping the cultural landscape of the era. This period saw the development of a refined courtly culture, characterized by elegant literature, poetry, music, and visual arts.
+
+                One of the most significant literary works of the Heian Period is "The Tale of Genji," written by Lady Murasaki Shikibu, which is considered one of the world's first novels. This masterpiece provides insight into courtly life and human emotions during this time.
                 
-                I want to create a  vertical timeline that has animaited features to talk about the differnt points in this era.
+                The Heian Period also witnessed the emergence of distinct gender roles, with men primarily engaged in politics and cultural pursuits, while women played vital roles in managing households and participating in courtly rituals. Despite these gender divisions, women like Murasaki Shikibu and Sei Shonagon made significant contributions to literature and culture.
+                
+                In addition to cultural achievements, the Heian Period was also marked by political intrigue and power struggles among aristocratic families. The dominance of the Fujiwara clan eventually led to the decentralization of power, with provincial governors gaining more autonomy.
+                
+                The decline of centralized authority and the rise of regional power holders set the stage for the eventual transition to the feudal era in Japan. The Heian Period's legacy continues to shape Japan's cultural identity, influencing literature, art, and societal norms to this day.</p>
+
+            <div class="timeline">
+
+                <div class="container1 left-container">
+                    <img src="https://booklove.space/portfolio/maps-heian-japan/akitsushima-map-old-version_hu1daecbb30b215bb1f19a5aeafb9b4c5b_506936_660x0_resize_q90_lanczos.jpg" alt="first logo">
+                    <div class="text-box">
+                        <h2>Capital move to modern day Kyoto</h2>
+                        <small>794 CE</small>
+                        <p>Emperor Kanmu establishes Heian-kyo (modern-day Kyoto) as the new capital of Japan,\
+                            marking the beginning of the Heian Period.</p>
+                            <span class="left-container-arrow"></span>
+                    </div>
+            
+                </div>
+            
+                <div class="container1 right-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/FlowRoot3824.svg/300px-FlowRoot3824.svg.png" alt="second logo">
+                    <div class="text-box">
+                        <h2>Development of Kana Script</h2>
+                        <small>9th century</small>
+                        <p>The creation of hiragana and katakana syllabaries greatly facilitates
+                            Japanese writing and literacy.</p>
+                            <span class="right-container-arrow"></span>
+                    </div>
+            
+                </div>
+            
+                <div class="container1 left-container">
+                    <img src="https://cdn11.bigcommerce.com/s-q39b4/images/stencil/2000x2000/products/8524/232179/9784805314647.website__51603.1567533156.jpg?c=2" alt="third logo">
+                    <div class="text-box">
+                        <h2>The Tale of Genji</h2>
+                        <small>Early 11th century</small>
+                        <p>Lady Murasaki Shikibu writes "The Tale of Genji," one of the world's first novels and a masterpiece
+                             of Japanese literature.</p>
+                            <span class="left-container-arrow"></span>
+                    </div>
+            
+                </div>
+            
+                <div class="container1 right-container ">
+                    <img src="data:image/jpeg;base64,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" alt="forth logo">
+                    <div class="text-box">
+                        <h2>Fujiwara Dominance</h2>
+                        <small>Mid 11th century</small>
+                        <p>The Fujiwara clan reaches the height of its power, influencing imperial politics and shaping the
+                            cultural landscape of the Heian Period.</p>
+                            <span class="right-container-arrow"></span>
+                    </div>
+            
+                </div>
+            
+                <div class="container1 left-container">
+                    <img src="https://cdn.kastatic.org/ka-perseus-images/01b3c0e66a9df99aabe053b3fecbbd70fdf3613e.jpg" alt="fifth logo">
+                    <div class="text-box">
+                        <h2>Decline of Centralized Power</h2>
+                        <small>Late 11th Century</small>
+                        <p>The decline of imperial authority leads to the rise of aristocratic families
+                            and increased regional autonomy in Japan.</p>
+                            <span class="left-container-arrow"></span>
+                    </div>
+            
+                </div>
+            
             </div>
+
             
         </div>
+        <!-- Make a scroll up functoin for the history section -->
         
         <div class="section">
             <h2>Explore More</h2>

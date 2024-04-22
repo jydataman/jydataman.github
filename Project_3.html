@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Exploring the Heian Period</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap" rel="stylesheet">
+
 <style>
     
     body {
@@ -25,15 +29,20 @@
         align-items: center;
     }
     .logo img {
-        max-width: 100px; /* Adjust the size as needed */
-        height: auto; /* Maintain aspect ratio */
+        max-width: 100px; 
+        height: auto; 
     }
     .title {
-        font-size: 24px;
+        font-size: 54px;
+        font-family: 'Jersey 10 Charted'
     }
     .navigation {
         display: flex;
     }
+
+    .navigation a {
+    text-decoration: none; 
+}
     .navigation-box {
         background-color: #555;
         color: #fff;
@@ -56,6 +65,12 @@
         border-radius: 10px;
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
     }
+
+    .container h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+
+    }
     .section {
         margin-bottom: 20px;
         padding: 20px;
@@ -75,20 +90,21 @@
         font-weight: bold;
         margin-bottom: 10px;
     }
-    .section-image {
-        max-width: 100%;
-        text-align: center; 
-        margin-bottom: 70px;
-        margin-top: 20px;
-    }
-    
 
     .section-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center; /* Center align text */
-    }
+    display: flex;
+    flex-wrap: nowrap; 
+}
+
+.section-text {
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+.section-image img {
+    max-width: 100%; 
+    height: auto; 
+}
     .bold-header {
         font-weight: bold;
         margin-bottom: 10px;
@@ -107,41 +123,49 @@
     <header>
         <div class="header-content">
             <div class="logo">
-                <img src="https://render.fineartamerica.com/images/rendered/default/front/spiral-notebook/images/artworkimages/medium/3/heian-period-courtier-on-a-moonlit-beach-kobayashi-kiyochika-japanese-1847-1915-artistic-rifki.jpg?&targetx=-566&targety=0&imagewidth=1813&imageheight=961&modelwidth=680&modelheight=961&backgroundcolor=204D6B&orientation=0&producttype=spiralnotebook" alt="Logo">
+                <a href="https://www.worldhistory.org/Heian_Period/">
+                    <img src="https://render.fineartamerica.com/images/rendered/default/front/spiral-notebook/images/artworkimages/medium/3/heian-period-courtier-on-a-moonlit-beach-kobayashi-kiyochika-japanese-1847-1915-artistic-rifki.jpg?&targetx=-566&targety=0&imagewidth=1813&imageheight=961&modelwidth=680&modelheight=961&backgroundcolor=204D6B&orientation=0&producttype=spiralnotebook" alt="Logo">
+                </a>
             </div>
             <div class="title">
                 Exploring the Heian Period
             </div>
             <div class="navigation">
-                <a href="Project_3.html" class="navigation-box">Home</a>
-                <a href="Overview.html" class="navigation-box">Overview</a>
-                <a href="Culture.html" class="navigation-box">Culture</a>
-                <a href="History.html" class="navigation-box">History</a>
-                <a href="Interactive.html" class="navigation-box">Fun Game</a>
+                <a href="Project_3.html" class="navigation-box" >Home</a>
+                <a href="Overview.html" class="navigation-box" >Overview</a>
+                <a href="Culture.html" class="navigation-box" >Culture</a>
+                <a href="History.html" class="navigation-box" >History</a>
             </div>
         </div>
     </header>
 
     <div class="container">
-    <div class="section">
-        <h2>HomePage</h2>
-        <div class="bold-header">Welcome to our website!</div>
-        <div class="section-content">
-            <div>This is the homepage of our website.
-                Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. 
-            </div>
-            <div class="section-image">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/HEIKE_Lotus_Sutra_Prologue.JPG/220px-HEIKE_Lotus_Sutra_Prologue.JPG" alt="About Image">
+        <div class="section">
+            <h2>HomePage</h2>
+            <div class="bold-header">Welcome to our website!</div>
+            <div class="section-content">
+                <div class="section-text">
+                    <p>This is the homepage of our website.
+                        Japan has a unique and long history with many famous
+                        periods in their history. Most famously the Edo Period,
+                        Meiji Period, andthe rise to the modern country it is now.
+                        Often not talked about is the Heian Period.The Heian period is
+                        often regarded as a critical period in the development of Japanese identity,
+                        particularly in terms of its distinct cultural and artistic achievements.
+                        This period is known for cultural and artistic acts, leading to the flourishing
+                        of literature, poetry, calligraphy, painting, and architecture.
+                        Enjoy the website!
+                    </p>
+                </div>
+                <div class="section-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/HEIKE_Lotus_Sutra_Prologue.JPG/220px-HEIKE_Lotus_Sutra_Prologue.JPG" alt="About Image">
+                </div>
             </div>
         </div>
-    </div>
     
     <div class="section long-content">
         <h2>Why</h2>
-        <div>This is why you should explore more.
-            Welcome to our website dedicated to exploring the fascinating Heian period of Japan (794-1185 AD). 
+        <div>This is why you should explore more. 
             This period in Japanese history was marked by significant cultural, artistic, and political developments, 
             and our goal is to provide you with a comprehensive understanding of this captivating era.
         </div>
